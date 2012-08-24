@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+base=$(dirname $(which $0))
+git rev-list --all | fgrep --color=auto -f $base"/words.txt" -
